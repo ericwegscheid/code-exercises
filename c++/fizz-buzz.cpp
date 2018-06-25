@@ -1,9 +1,23 @@
-#!/bin/bash
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <sstream>
 
-len=$([[ -n $1 ]] && echo $1 || echo 100)
+using namespace std;
 
-for (( i = 1; i <= $len; i++ )); do
-	fizz=$([[ $(expr $i % 3) == 0 ]] && echo 'Fizz' || echo '')
-	buzz=$([[ $(expr $i % 5) == 0 ]] && echo 'Buzz' || echo '')
-	[[ -n $fizz$buzz ]] && echo $fizz$buzz || echo $i
-done
+int main(int argc, char** argv) {
+	int len = argc > 1 ? atoi(argv[1]) : 100;
+
+	for( int i = 1; i <= len; i++ ){
+		string fizz = i % 3 == 0 ? "Fizz" : "";
+		string buzz = i % 5 == 0 ? "Buzz" : "";
+		string fizzBuzz = fizz + buzz;
+
+		ostringstream index;
+		index << i;
+
+		cout << (fizzBuzz.length() > 0 ? fizzBuzz : index.str()) << endl;
+	}
+
+	return 0;
+}

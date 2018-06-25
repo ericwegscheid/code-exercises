@@ -1,5 +1,15 @@
+## Compile and run java examples
+
+- Ensure java runtime environment is installed
+
+`$ sudo apt install openjdk-8-jre`
+
+- compile java file
+
+`$ javac Filename.java
+
+- run java example
+
+`$ java Filename`
 
 
-## TODO: need to add detailas about compiling and running java code examples
-
-`$ sudo apt-get install openjdk-8.jre`
