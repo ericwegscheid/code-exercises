@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
 		string buzz = i % 5 == 0 ? "Buzz" : "";
 		string fizzBuzz = fizz + buzz;
 
-		ostringstream index;
+		stringstream index;
 		index << i;
 
 		cout << (fizzBuzz.length() > 0 ? fizzBuzz : index.str()) << endl;
