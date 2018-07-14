@@ -6,7 +6,7 @@
 
 - compile cpp file
 
-`$ g++ inputfile.cpp -o outputfile
+`$ g++ inputfile.cpp -o outputfile`
 
 - run executable, ensure outputfile is executable
 

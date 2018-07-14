@@ -6,7 +6,7 @@
 
 - compile java file
 
-`$ javac Filename.java
+`$ javac Filename.java`
 
 - run java example
 
