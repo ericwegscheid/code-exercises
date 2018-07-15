@@ -10,6 +10,6 @@
 
 - run executable, ensure outputfile is executable
 
-`$ chmod 755 outputfile
+`$ chmod 755 outputfile`
 
 
