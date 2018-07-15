@@ -13,7 +13,7 @@ function step($i) {
 
 	$match = array_search($i, $cycle);
 	$match = !is_int($match) ? -1 : $match;
-	$v = count($arr) >= $i + 1 ? $arr[$i] : null;
+	$v = count($arr) > $i ? $arr[$i] : null;
 
 	if( !$v ) {
 		return 'No cycle found';

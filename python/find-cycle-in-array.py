@@ -9,7 +9,7 @@ cycle = []
 
 def step(i):
     match = cycle.index(i) if i in cycle else -1
-    v = arr[i] if len(arr) >= i + 1 else None
+    v = arr[i] if len(arr) > i else None
 
     if v is None:
         return 'No cycle found'
