@@ -41,5 +41,4 @@ public class FindCycleInArray {
 
 		System.out.println(Arrays.toString(step(0)));
 	}
-
 }

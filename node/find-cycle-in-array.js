@@ -14,7 +14,7 @@ var step = (i) => {
 		return 'No cycle found';
 	}
 
-	if( match >= 0) {
+	if( match >= 0 ) {
 		return cycle.slice(match);
 	}
 
@@ -23,4 +23,4 @@ var step = (i) => {
 	return step(v);
 };
 
-console.log('The cycle is: ', step(0));
+console.log(step(0));
