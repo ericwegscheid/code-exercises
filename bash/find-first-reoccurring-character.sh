@@ -9,11 +9,11 @@ result='No reoccurring characters found'
 
 for character in $( echo "${str}" | sed -e 's/\(.\)/\1\n/g' ); do
 	if [[ -v "track[$character]" ]]; then
-		result=$character;
-		break;
+		result=$character
+		break
 	fi
 
-	track[$character]=true;
+	track[$character]=true
 done
 
 echo $result
