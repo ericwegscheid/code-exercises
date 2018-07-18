@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 
 arr=(3 2 3 1 2); # result: 3 1 2
