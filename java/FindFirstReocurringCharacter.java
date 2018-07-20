@@ -10,7 +10,6 @@ public class FindFirstReocurringCharacter {
 	private static String result = "No reoccurring characters found";
 
 	public static void main(String[] args) {
-
 		for( int i = 0; i < str.length(); i++ ) {
 			char character = str.charAt(i);
 
