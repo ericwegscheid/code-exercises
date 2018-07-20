@@ -37,8 +37,6 @@ public class FindCycleInArray {
 	}
 
 	public static void main(String[] args) {
-		FindCycleInArray App = new FindCycleInArray();
-
 		System.out.println(Arrays.toString(step(0)));
 	}
 }
