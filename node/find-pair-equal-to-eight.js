@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-// var arr = [4, 2, 1, 4]; // result: [ 4, 4 ]
+var arr = [4, 2, 1, 4]; // result: [ 4, 4 ]
 // var arr = [1, 9, 3, 2]; // result: 'No pair equal to 8'
 
 var a = 0,
