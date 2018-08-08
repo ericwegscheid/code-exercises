@@ -6,7 +6,7 @@ const commonNumbers = [];
 let i1 = 0;
 let i2 = 0;
 
-const step = () => {
+while( i1 < arr1.length && i2 < arr2.length ) {
 	let v1 = arr1[i1];
 	let v2 = arr2[i2];
 
@@ -21,12 +21,6 @@ const step = () => {
 	} else {
 		i2++;
 	}
-
-	if( i1 < arr1.length && i2 < arr2.length ) {
-		step();
-	}
 }
-
-step();
 
 console.log(commonNumbers);
