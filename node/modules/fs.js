@@ -9,7 +9,7 @@ var wstream = fs.createWriteStream('file.txt');
 var str = 'Hello world!\n';
 
 wstream.write(str);
-wstream.write(crypto.randomBytes(99));
+wstream.write(crypto.randomBytes(9999));
 
 wstream.end(() => console.log('file has been written'));
 
@@ -26,3 +26,4 @@ rstream.pipe(process.stdout);
 // rstream
 // 	.on('data', (chunk) => output += chunk)
 // 	.on('end', () => console.log(output));
+
