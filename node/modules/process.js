@@ -11,12 +11,14 @@ const execFn = () => {
 	});
 }
 
-if( fs.existsSync(file) ) {
-	execFn();
+fs.access(file, 'r', (err) => {
+	if( err ) {
+		spawn(process.execPath, ['fs.js']).on('close', execFn);
 
-} else {
-	spawn(process.execPath, ['fs.js']).on('close', execFn);
-}
+	} else {
+		execFn();
+	}
+});
 
 
 
