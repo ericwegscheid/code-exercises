@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const flip = require('../src/flipper');
+const flip = require('../src/letter-flipper').flip;
 
 describe('flip', () => {
 	let data = [
