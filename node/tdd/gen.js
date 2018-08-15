@@ -64,7 +64,8 @@ fs.writeFileSync(
 	"devDependencies": {
 		"mocha": "2.5.3",
 		"chai": "3.5.0",
-		"npm-watch": "0.3.0"
+		"npm-watch": "0.3.0",
+		"lodash": "4.17.10"
 	}
 }`);
 
