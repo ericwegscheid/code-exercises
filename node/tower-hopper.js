@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-// const arr = [3, 4, 1, 1, 2, 0]; // [ '0 to 1', '1 to 4', '4 to finish' ]
+const arr = [3, 4, 1, 3, 2, 0]; // [ '0 to 3', '3 to finish' ]
 // const arr = [3, 1, 1, 4, 2, 0]; // [ '0 to 3', '3 to finish' ]
-const arr = [0, 1, 3, 4, 0, 0]; // No hops lead to finish
+// const arr = [0, 1, 3, 4, 0, 0]; // No hops lead to finish
 
 const end = arr.length - 1;
 const hops = [];
@@ -15,9 +15,12 @@ const getNextIndex = (range) => {
 	arr
 		.slice(range[0], range[1] + 1)
 		.forEach((v, i) => {
-			if( v > next ) {
-				next = v;
-				nextIndex = range[0] + i;
+			let actualIndex = range[0] + i;
+			let potentialPos = v + actualIndex;
+
+			if( potentialPos > next ) {
+				next = potentialPos;
+				nextIndex = actualIndex;
 			}
 		});
 
