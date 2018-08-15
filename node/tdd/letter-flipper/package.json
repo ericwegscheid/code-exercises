@@ -1,0 +1,25 @@
+{
+	"name": "unit-test-example",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"watch": {
+		"test": {
+			"patterns": [
+				"{src,test}/*.js"
+	  ],
+	  "quiet": true
+		}
+	},
+	"scripts": {
+		"test": "mocha",
+		"watch": "npm-watch test"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"mocha": "2.5.3",
+		"chai": "3.5.0",
+		"npm-watch": "0.3.0"
+	}
+}
