@@ -10,6 +10,7 @@ let mod = {
 		} else {
 			subset[i] = null;
 			mod.getSubset(arr, output, subset, i + 1);
+
 			subset[i] = arr[i];
 			mod.getSubset(arr, output, subset, i + 1);
 		}
