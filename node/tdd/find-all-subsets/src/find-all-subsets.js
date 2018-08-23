@@ -1,12 +1,12 @@
 'use strict'
 
-const _ = require('lodash');
-
 let mod = {
 	getSubset: (arr, output, subset, i) => {
+		// 
 		if( i == arr.length ) {
 			output.push(subset.join(''));
 
+		// build subset recursively
 		} else {
 			subset[i] = null;
 			mod.getSubset(arr, output, subset, i + 1);

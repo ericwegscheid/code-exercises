@@ -10,9 +10,16 @@ let maxIndex = arr.length - 1;
 let currentIndex;
 let currentValue;
 
-while( !found || maxIndex == minIndex ) {
+while( !found ) {
+
+	debugger;
+
 	currentIndex = Math.floor((maxIndex - minIndex) / 2) + minIndex;
 	currentValue = arr[currentIndex];
+
+	if( [maxIndex, minIndex].indexOf(currentIndex) >= 0 ) {
+		break;
+	}
 
 	if( input > currentValue ) {
 		minIndex = currentIndex;
@@ -25,4 +32,4 @@ while( !found || maxIndex == minIndex ) {
 	}
 }
 
-console.log(`found ${input} at index ${currentIndex}`);
+console.log(found ? `found ${input} at index ${currentIndex}` : `${input} does not exist in this array: \n${arr}`);
