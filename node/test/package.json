@@ -1,5 +1,5 @@
 {
-	"name": "get-max-connected-numbers-in-matrix",
+	"name": "find-all-subsets",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",

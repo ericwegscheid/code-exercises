@@ -2,7 +2,7 @@
 
 let mod = {
 	getSubset: (arr, output, subset, i) => {
-		// 
+		// completed subset
 		if( i == arr.length ) {
 			output.push(subset.join(''));
 
