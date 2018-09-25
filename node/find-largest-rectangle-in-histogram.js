@@ -29,7 +29,7 @@ arr.forEach((v, i) => {
 	}
 
 	largestArea = hasSecondaryArea ?
-		Math.max(Math.max.apply(this, possibleAreas), largestArea) :
+		Math.max.apply(this, possibleAreas.concat(largestArea)) :
 		possibleAreas[0];
 });
 
