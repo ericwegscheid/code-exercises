@@ -13,3 +13,7 @@ package-lock.json
 # Generated files #
 ###################
 *.txt
+
+# Configuration files #
+#######################
+.vscode
