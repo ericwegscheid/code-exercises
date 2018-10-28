@@ -8,20 +8,20 @@ $arr = [3, 2, 3, 1, 2] # result: [3, 1, 2]
 $cycle = []
 
 def step(i)
-	match = $cycle.index(i)
-	v = $arr[i]
+  match = $cycle.index(i)
+  v = $arr[i]
 
-	if !v
-		return 'No cycle found'
-	end
+  if !v
+    return 'No cycle found'
+  end
 
-	if match
-		return $cycle[match..-1]
-	end
+  if match
+    return $cycle[match..-1]
+  end
 
-	$cycle << i
+  $cycle << i
 
-	return step(v)
+  return step(v)
 end
 
 puts step(0).inspect

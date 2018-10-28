@@ -3,7 +3,7 @@
 require './car'
 
 class Camaro < Car
-	def initialize(currentSpeed, maxSpeed=200, brand='Chevy')
-		super(currentSpeed, maxSpeed, brand)
-	end
+  def initialize(current_speed)
+    super(current_speed, 200, 'Chevy')
+  end
 end

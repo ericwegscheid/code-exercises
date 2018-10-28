@@ -8,10 +8,10 @@ track = {}
 result = 'No reoccurring characters found'
 
 for character in str:
-	if character in track:
-		result = character
-		break
+  if character in track:
+    result = character
+    break
 
-	track[character] = True
+track[character] = True
 
 print(result)

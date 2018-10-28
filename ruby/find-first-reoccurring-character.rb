@@ -8,12 +8,12 @@ $track = {}
 $result = 'No reoccurring characters found'
 
 $str.each_char do |character|
-	if $track.has_key? character
-		$result = character
-		break
-	end
+  if $track.has_key? character
+    $result = character
+    break
+  end
 
-	$track[character] = true
+  $track[character] = true
 end
 
 puts $result

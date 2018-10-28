@@ -1,43 +1,34 @@
 #!/usr/bin/ruby
 
-require 'pry-nav'
-
 $arr = [2, 3, 2, 0, 3, 5, 1, 1] # result: 6
 # $arr = [2, 3, 2, 0, 3, 5, 1, 9] # result: 9
 # $arr = [2, 0, 2, 0, 3, 0, 3, 2] # result: 4
 
 $index = 1;
-$resetIndex = 0;
-$largestArea = 0;
+$reset_index = 0;
+$largest_area = 0;
 
 $arr.each_with_index do |v, i|
-	i += 1
+  i += 1
 
-	binding.pry
+  if v == 0
+    $reset_index = i;
+  end
 
-	if v == 0
-		$resetIndex = i;
-	end
+  $index = i - $reset_index
 
-	$index = i - $resetIndex
+  # get all possible areas at this position
+  possible_areas = [v];
+  has_secondary_area = $index > 1;
 
-	# get all possible areas at this position
-	possibleAreas = [v];
-	hasSecondaryArea = $index > 1;
+  if has_secondary_area
+    # multiply min running value since resetIndex with index
+    possible_areas << $arr[$reset_index...i].min * $index
+  end
 
-	if hasSecondaryArea
-
-		puts $arr[$resetIndex, i - 1].min
-
-		# multiply min running value since resetIndex with index
-		possibleAreas << $arr[$resetIndex, i].min * $index
-
-# 		puts possibleAreas.inspect
-	end
-
-	$largestArea = hasSecondaryArea ?
-		[possibleAreas.max, $largestArea].max :
-		possibleAreas[0]
+  $largest_area = has_secondary_area ?
+    (possible_areas + [$largest_area]).max :
+    possible_areas[0]
 end
 
-puts $largestArea
+puts $largest_area
