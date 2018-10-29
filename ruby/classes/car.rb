@@ -1,7 +1,7 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 class Car
-  def initialize(current_speed=0, max_speed=0, brand='unkown')
+  def initialize(current_speed=0, max_speed=0, brand='unknown')
     @current_speed = current_speed;
     @max_speed = max_speed;
     @brand = brand

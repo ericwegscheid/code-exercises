@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 $str = 'dabcfa'; # result: a
 # $str = 'adbdfa'; # result: d

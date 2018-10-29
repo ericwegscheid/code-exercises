@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 const flip = require('./src/letter-flipper').flip;
 

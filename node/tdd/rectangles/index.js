@@ -1,3 +1,3 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 const rectangles = require('./src/rectangles');

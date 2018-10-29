@@ -1,4 +1,4 @@
-#!C:\Program Files\nodejs\node.exe
+#!/usr/bin/env node
 
 const getMaxConnectedNumbersInMatrix = require('./src/get-max-connected-numbers-in-matrix');
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 str = 'dabcfa'; # result: a
 # str = 'adbdfa'; # result: d

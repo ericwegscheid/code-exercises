@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 $arr = [2, 3, 2, 0, 3, 5, 1, 1] # result: 6
 # $arr = [2, 3, 2, 0, 3, 5, 1, 9] # result: 9

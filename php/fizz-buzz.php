@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/usr/bin/env php
 <?php
 
 $len = isset($argv[1]) ? $argv[1] : 100;

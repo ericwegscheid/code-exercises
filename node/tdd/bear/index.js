@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var Bear = require('./src/bear');
 var bear = new Bear();
 

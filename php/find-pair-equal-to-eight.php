@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/usr/bin/env php
 <?php
 
 // $arr = [4, 2, 1, 4]; // result: [ 4, 4 ]
