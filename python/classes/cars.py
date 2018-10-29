@@ -7,21 +7,24 @@ class Car:
     self.maxSpeed = maxSpeed;
     self.brand = brand;
     if self.currentSpeed > self.maxSpeed:
-      self.log("You have exceeded max speed! slow down!")
+      self.log('You have exceeded max speed! slow down!')
       self.deccelerate()
 
   def log(self, message):
     print(self.__class__.__name__ + ": " + message)
 
+  def onReachMaxSpeed(self):
+    self.log('Max speed of {} has been reached'.format(self.currentSpeed))
+
   def accelerate(self):
     while self.currentSpeed < self.maxSpeed:
       self.currentSpeed += 1
-    self.log("Max speed of " + str(self.currentSpeed) + " has been reached")
+    self.onReachMaxSpeed()
 
   def deccelerate(self):
     while self.currentSpeed > self.maxSpeed:
       self.currentSpeed -= 1
-    self.log("Max speed of " + str(self.currentSpeed) + " has been reached")
+    self.onReachMaxSpeed()
 
   def drive(self):
     self.accelerate()
