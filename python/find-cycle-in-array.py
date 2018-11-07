@@ -8,17 +8,17 @@ arr = [3, 2, 3, 1, 2] # result: [3, 1, 2]
 cycle = []
 
 def step(i):
-  match = cycle.index(i) if i in cycle else -1
-  v = arr[i] if len(arr) > i else None
+    match = cycle.index(i) if i in cycle else -1
+    v = arr[i] if len(arr) > i else None
 
-  if v is None:
-    return 'No cycle found'
+    if v is None:
+        return 'No cycle found'
 
-  if match >= 0:
-    return cycle[match:]
+    if match >= 0:
+        return cycle[match:]
 
-  cycle.append(i)
+    cycle.append(i)
 
-  return step(v)
+    return step(v)
 
 print(step(0))
