@@ -3,7 +3,7 @@
 ```bash
 # install 
 url='https://raw.githubusercontent.com/ericwegscheid/code-exercises/master/ruby/classes/'
-for f in index.rb car.rb camaro.rb; do curl $url$f && chmod +x $f; done
+for f in index.rb car.rb camaro.rb; do curl $url$f -o $f && chmod +x $f; done
 
 # run
 ./index.rb
