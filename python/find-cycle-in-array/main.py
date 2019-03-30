@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 
-arr = [3, 2, 3, 1, 2] # result: [3, 1, 2]
-# arr = [3, 2, 4, 2, 1] # result: [2, 4, 1]
-# arr = [3, 2, 4, 5, 1] # result: No cycle found
-# arr = [1, 2, 3, 4, 5] # result: No cycle found
 
+arr = []
 cycle = []
+
 
 def step(i):
     match = cycle.index(i) if i in cycle else -1
@@ -21,4 +19,12 @@ def step(i):
 
     return step(v)
 
-print(step(0))
+
+def find_cycle(a):
+    global arr
+    global cycle
+
+    arr = a
+    cycle = []
+
+    return step(0)
