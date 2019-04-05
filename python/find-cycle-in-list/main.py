@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 
-arr = []
+items = []
 cycle = []
 
 
 def step(i):
     match = cycle.index(i) if i in cycle else -1
-    v = arr[i] if len(arr) > i else None
+    v = items[i] if len(items) > i else None
 
     if v is None:
         return 'No cycle found'
@@ -20,11 +20,11 @@ def step(i):
     return step(v)
 
 
-def find_cycle(a):
-    global arr
+def find_cycle(l):
+    global items
     global cycle
 
-    arr = a
+    items = l
     cycle = []
 
     return step(0)

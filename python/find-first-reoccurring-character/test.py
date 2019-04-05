@@ -8,7 +8,7 @@ class TestFindReoccurringCharacter(unittest.TestCase):
     """ Tests the find_reoccurring_character function """
 
     def test_finds_reoccurring_character(self):
-        # should find the reoccurring characters
+        # should return the appropriate character
         self.assertEqual(
                 find_reoccurring_character('dabcfa'),
                 'a')

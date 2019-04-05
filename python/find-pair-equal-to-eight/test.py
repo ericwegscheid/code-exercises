@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
 
 import unittest
-from main import find_cycle
+from main import fn
 
 
-class TestFindCycleInArray(unittest.TestCase):
+class TestFn(unittest.TestCase):
+    """ Test the fn function """
 
-    def test_finds_correct_cycle(self):
-        # Test for correct output
-        self.assertListEqual(find_cycle([3, 2, 3, 1, 2]), [3, 1, 2])
-        self.assertListEqual(find_cycle([3, 2, 4, 2, 1]), [2, 4, 1])
+    def test_positives(self):
+        # test positive use cases
 
-    def test_finds_no_cycle(self):
-        # Test for no cycle is found
-        self.assertEqual(find_cycle([3, 2, 4, 5, 1]), 'No cycle found')
-        self.assertEqual(find_cycle([1, 2, 3, 4, 5]), 'No cycle found')
+        self.assertEqual(
+                fn('a'),
+                'a')
+
+    def test_negatives(self):
+        # test negative use cases
+
+        self.assertEqual(
+                fn(1),
+                'no good')
 
 
 if __name__ == '__main__':
