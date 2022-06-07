@@ -62,10 +62,10 @@ fs.writeFileSync(
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"mocha": "2.5.3",
-		"chai": "3.5.0",
-		"npm-watch": "0.3.0",
-		"lodash": "4.17.13"
+		"mocha": "~9.1.4",
+		"chai": "~4.3.4",
+		"npm-watch": "~0.11.0",
+		"lodash": "~4.17.21"
 	}
 }`);
 

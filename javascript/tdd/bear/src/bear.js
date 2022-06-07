@@ -17,7 +17,7 @@ class Bear {
 	}
 
 	speak() {
-		return 'Ahh, Hello!';
+		return 'Hello! I am bear.';
 	}
 
 	ask(question) {
